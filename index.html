@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Lost Comment: The Textarea savior</title>
+	<script type="text/javascript" src="lost-comment.min.js"></script>
+</head>
+<body>
+	<textarea id="post-101"></textarea>
+
+  <textarea id="post-102"></textarea>
+
+  <textarea id="post-103"></textarea>
+
+	<script type="text/javascript">
+		LostCommment({el: 'post-101'});
+	</script>
+
+  <script type="text/javascript">
+    var el = document.getElementById('post-102')
+
+    LostCommment({el: el});
+  </script>
+
+  <script type="text/javascript">
+    var el = document.getElementById('post-103')
+
+    LostCommment({
+    	el: el,
+      identifier: 'qweqweqwewqe'
+   	});
+  </script>
+</body>
+</html>
