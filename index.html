@@ -2,15 +2,30 @@
 <head>
 	<title>Lost Comment: The Textarea savior</title>
 	<script type="text/javascript" src="lost-comment.min.js"></script>
+
+  <style>
+    body {
+      background: rgb(240,240,240);
+      font-family: Helvetica, arial, sans-serif;
+      margin: 3em auto;
+      max-width: 30em;
+    }
+  </style>
 </head>
 <body>
   <h1>Three backed up textareas</h1>
 
-	<textarea id="post-101"></textarea>
+  <div class="example">
+	 <textarea id="post-101"></textarea>
+  </div>
 
-  <textarea id="post-102"></textarea>
+  <div class="example">
+    <textarea id="post-102"></textarea>
+  </div>
 
-  <textarea id="post-103"></textarea>
+  <div class="example">
+    <textarea id="post-103"></textarea>
+  </div>
 
 	<script type="text/javascript">
 		LostCommment({el: 'post-101'});
