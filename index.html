@@ -10,12 +10,29 @@
       margin: 3em auto;
       max-width: 30em;
     }
+
+    .example {
+      margin-top: 2em;
+      padding-top: 2em;
+      border-top: 1px solid rgb(220,220,220);
+    }
+
+      .example.first {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+
+      .example textarea {
+        width: 100%;
+        height: 150px;
+      }
   </style>
 </head>
 <body>
   <h1>Three backed up textareas</h1>
 
-  <div class="example">
+  <div class="example first">
 	 <textarea id="post-101"></textarea>
   </div>
 
